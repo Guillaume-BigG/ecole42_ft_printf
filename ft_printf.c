@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gbeaudoi <gbeaudoi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guillaumebeaudoin <guillaumebeaudoin@st    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 14:50:37 by gbeaudoi          #+#    #+#             */
-/*   Updated: 2023/11/24 18:20:04 by gbeaudoi         ###   ########.fr       */
+/*   Updated: 2023/11/29 17:27:04 by guillaumebe      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int	ft_printf(const char *str, ...)
 			ft_initialize(format);
 		}
 		else
-			len += write(1, &str[i], 1);
+			format->count += write(1, &str[i], 1);
 	}
 	va_end(format->args);
 	free(format);

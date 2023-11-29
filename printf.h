@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   printf.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gbeaudoi <gbeaudoi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: guillaumebeaudoin <guillaumebeaudoin@st    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 16:29:44 by gbeaudoi          #+#    #+#             */
-/*   Updated: 2023/11/28 20:39:26 by gbeaudoi         ###   ########.fr       */
+/*   Updated: 2023/11/29 17:25:45 by guillaumebe      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,7 @@ void		ft_check_str(t_print *format, char *str, int k);
 void		ft_check_zero_hex(t_print *format, int flag, int m, int k);
 void		ft_check_pointer(t_print *format, unsigned long p);
 void		ft_check_intdec(t_print *format, int sign, int k, int m);
+int ft_check_malloc(t_print *format);
+void	ft_check_beg_str(const char *str);
 
 #endif
